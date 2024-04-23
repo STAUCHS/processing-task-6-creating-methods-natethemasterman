@@ -9,7 +9,7 @@ public class Sketch extends PApplet {
   }
 	
   // Calling parameters
-  public void draw() {
+  void draw() {
     drawFlower(40, 80, 25);
     drawFlower(80, 80, 25);
     drawFlower(120, 80, 25);
@@ -46,7 +46,6 @@ public class Sketch extends PApplet {
     drawFlower(280, 320, 25);
     drawFlower(320, 320, 25);
     drawFlower(360, 320, 25);
-    drawFace();
   }
 
   // Draw Flower
@@ -75,28 +74,6 @@ public class Sketch extends PApplet {
   // Lower-right part
   ellipse(flowerX + flowerDistance, flowerY + flowerDistance, 
     flowerSize, flowerSize);
-  }
-
-  // Draw Face
-  void drawFace() {
-  // Head
-  fill(34, 139, 34);
-  ellipse(100, 100, 150, 150);
-
-  // Eyes
-  fill(255);
-  ellipse(75, 85, 30, 20);
-  ellipse(125, 85, 30, 20);
-
-  // Pupils
-  fill(0);
-  ellipse(75, 85, 10, 10);
-  ellipse(125, 85, 10, 10);
-
-  // Mouth
-  fill(255, 0, 0);
-  arc(100, 125, 80, 50, 0, PI);
-  line(60, 125, 140, 125);
   }
 }
 
